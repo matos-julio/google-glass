@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Introdução ao JavaScript</title>
+    <script>
+        function acende() {
+            document.getElementById("luz").src= "projeto-glass-html5/_imagens/lampada-acesa.jpg";
+        }
+        function apaga() {
+            document.getElementById("luz").src= "projeto-glass-html5/_imagens/lampada-apagada.jpg";
+        }
+        function quebra() {
+            document.getElementById("luz").src= "projeto-glass-html5/_imagens/lampada-quebrada.jpg";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Acenda a Lâmpada</h1>
+    <img src="projeto-glass-html5/_imagens/lampada-apagada.jpg" id="luz" onmousemove="acende()" onmouseout="apaga()" onclick="quebra()">
+
+</body>
+
+</html>
